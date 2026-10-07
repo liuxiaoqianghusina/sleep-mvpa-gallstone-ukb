@@ -1,0 +1,20 @@
+# UK Biobank participant-level data, and anything derived from them, must never be committed.
+/data/
+/results/
+/logs/
+/figures/output/
+/figures/data/*.csv
+/tables/output/
+*.rds
+*.tmp
+
+# local paths
+config.sh
+
+# system and editor files
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
