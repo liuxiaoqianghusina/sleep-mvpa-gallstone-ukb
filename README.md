@@ -1,9 +1,9 @@
 # Trading sleep for moderate-to-vigorous physical activity and gallstone disease (UK Biobank)
 
-Analysis code for:
+Analysis code for the manuscript:
 
-> [Authors]. Trading sleep for moderate-to-vigorous physical activity and risk of gallstone disease: a prospective
-> cohort study with disease-specificity tests and abdominal MRI. *BMC Medicine* [year; volume:article]. doi:[DOI]
+> **Trading sleep for moderate-to-vigorous physical activity and risk of gallstone disease: a prospective cohort
+> study with disease-specificity tests and abdominal MRI.**
 
 The study uses wrist accelerometry from UK Biobank (2013–2015). Each participant's day is split into four parts: sleep,
 inactivity, light activity and moderate-to-vigorous physical activity (MVPA). The analysis estimates how 9.8-year
@@ -24,7 +24,7 @@ The g-formula code is adapted from Yiallourou et al., *BMC Medicine* 2026;24:11
 
 UK Biobank data cannot be shared by the authors. Bona fide researchers can apply for access at
 <https://www.ukbiobank.ac.uk>. This research was conducted using the UK Biobank Resource under application number
-[application number].
+1099827.
 
 **This repository contains no participant-level data or results derived from them.** The `.gitignore` excludes
 `data/`, `results/`, the figure and table outputs and `config.sh`.
@@ -41,8 +41,8 @@ In the extracts, column names follow the UK Biobank Research Analysis Platform (
 | `UKB_HEALTH_OUTCOMES` | first-occurrence dates of the outcomes and of the chronic diseases (130706–131794, listed in the scripts); 41272, 41282 (OPCS-4); 40005, 40006 (cancer registry) | 02, 05 |
 | `FREEUKB_INPUT` | fields 53, 54, 190, 191, 20002, 40000, 40001, 40002, 41270 and 41280, exported with the RAP Table Exporter and named as listed by `FreeUKB::ukb_required_fields("outcome_followup")` | 05 |
 
-The definitions and codings of all variables are given in the paper's Additional file 1 (Supplementary Methods,
-Table M1). The medication code lists are in `code_lists/`.
+The definitions and codings of all variables are given in the supplementary material of the paper (Supplementary
+Methods, Table M1). The medication code lists are in `code_lists/`.
 
 ## Software
 
@@ -165,7 +165,3 @@ On 8 cores:
 ## Licence
 
 MIT (see `LICENSE`). FreeUKB is distributed by its developers under its own MIT licence.
-
-## Contact
-
-[Corresponding author, email]
